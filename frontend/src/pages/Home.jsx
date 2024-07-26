@@ -4,10 +4,12 @@ import Loader from "../components/Loader";
 import Message from "../components/Message";
 import Header from "../components/Header";
 import Product from "./Products/Product";
+import { BASE_URL } from "../redux/constants";
 
 const Home = () => {
   const { keyword } = useParams();
   const { data, isLoading, isError } = useGetProductsQuery({ keyword });
+  console.log(`probing`, BASE_URL)
 
   return (
     <>
