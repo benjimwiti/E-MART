@@ -1,4 +1,6 @@
-export const BASE_URL = "";
+import { API_URL } from "../../config/api_url";
+
+export const BASE_URL = `${API_URL}`;
 export const USERS_URL = "/api/users";
 export const CATEGORY_URL = "/api/category";
 export const PRODUCT_URL = "/api/products";
