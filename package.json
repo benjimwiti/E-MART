@@ -4,7 +4,7 @@
   "description": "MERN Stack E-Commerce Project",
   "type": "module",
   "scripts": {
-    "backend": "nodemon backend/src/server.js",
+    "backend": "npm run dev --prefix backend",
     "frontend": "npm run dev --prefix frontend",
     "dev-setup": "concurrently \"npm i --prefix frontend\" \"npm i --prefix backend",
     "dev": "concurrently \"npm run frontend\" \"npm run backend",
