@@ -10,7 +10,7 @@
     "dev": "concurrently \"npm run frontend\" \"npm run backend",
     "build-backend": "npm i --prefix backend",
     "start-backend" : "node backend/src/server.js",
-    "frontend-build" : "npm run build --prefix frontend"
+    "frontend-build" : "cd frontend && npm i && npm run build"
   },
   "keywords": [],
   "author": "ben Mwiti",
