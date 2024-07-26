@@ -66,7 +66,7 @@ const router = createBrowserRouter(
         <Route path="productlist/:pageNumber" element={<ProductList />} />
         <Route path="product/update/:_id" element={<ProductUpdate />} />
         <Route path="orderlist" element={<OrderList />} />
-        {/* <Route path="dashboard" element={<AdminDashboard />} /> */} {/* coming soon */}
+        <Route path="dashboard" element={<AdminDashboard />} /> {/* coming soon */}
       </Route>
     </Route>
   )
