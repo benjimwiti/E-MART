@@ -1,0 +1,1 @@
+export const SANDBOX_CLIENT_ID = import.meta.env.SANDBOX_CLIENT_ID
