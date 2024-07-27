@@ -60,7 +60,7 @@ const removeCategory = asyncHandler(async (req, res) => {
 const listCategory = asyncHandler(async (req, res) => {
   try {
     const all = await Category.find({});
-    console.log(`probing`, all)
+    // console.log(`probing`, all)
     res.status(200)
       .json(all);
   } catch (error) {
