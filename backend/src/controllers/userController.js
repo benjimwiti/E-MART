@@ -36,6 +36,7 @@ const loginUser = asyncHandler(async (req, res) => {
   await authenticatePassword(password, user.password)
 
   createToken(res, userDetails._id);
+  res.cookie("token-test", "tokensecret")
   console.log(`check me out, user: ${user.username}`)
 
   res.status(200)
