@@ -29,7 +29,6 @@ const loginUser = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
 
   validateInputs(req.body, ["email", "password"])
-  console.log(`check me out, user:`)
 
   const user = await findUser(email)
   const userDetails = returnMinimalUserDetails(user)
@@ -37,6 +36,7 @@ const loginUser = asyncHandler(async (req, res) => {
   await authenticatePassword(password, user.password)
 
   createToken(res, userDetails._id);
+  console.log(`check me out, user: ${user.username}`)
 
   res.status(200)
     .json({

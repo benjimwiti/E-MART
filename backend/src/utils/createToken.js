@@ -11,9 +11,11 @@ export const createToken = (res, userId) => {
   res.cookie("jwt", token, {
     httpOnly: true,
     secure: process.env.NODE_ENV !== "development",
-    sameSite: 'none',
+    sameSite: 'None',
     maxAge: 100 * 30 * 24 * 60 * 60 * 1000,
   });
+  console.log(`token : ${token}`)
+  console.log(`cookie : ${res.cookie}`)
 
   return token;
 };
